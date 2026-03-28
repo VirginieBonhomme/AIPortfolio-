@@ -1,1 +1,208 @@
 /* This stylesheet is meant for custom styles, on top of the Bone Template */
+
+html, body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+iframe,
+video {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .nav-container {
+    width: 100%;
+    right: -100%;
+  }
+
+  header {
+    position: relative;
+  }
+
+  header .brand img {
+    max-height: 48px;
+    width: auto;
+  }
+
+  footer {
+    margin-top: 0;
+    padding: 70px 0 40px;
+  }
+
+  footer .text-right {
+    text-align: left;
+  }
+
+  .hero .ml11 {
+    font-size: 2.4em;
+    line-height: 1.15;
+  }
+
+  .slider.fs .hero,
+  .slider.fs ul.slides,
+  .hero.fs {
+    min-height: 70vh;
+    height: auto;
+  }
+
+  .grid .grid-item {
+    width: calc(100% - 50px);
+  }
+
+  .grid .grid-item .caption {
+    position: relative;
+    top: auto;
+    opacity: 1;
+  }
+
+  .grid .grid-item .caption .type,
+  .grid .grid-item .caption .description,
+  .grid .grid-item .caption .inner {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    opacity: 1;
+    transform: none;
+  }
+
+  .grid .grid-item .caption .description,
+  .grid .grid-item .caption .inner {
+    padding: 0;
+  }
+
+  .project-copy,
+  .project-meta,
+  .about-copy,
+  .home-intro-copy {
+    max-width: 100%;
+  }
+
+  .project-meta {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  section {
+    padding: 32px 0;
+  }
+
+  section.content p,
+  section .content p,
+  header .content p {
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 2.1em;
+    line-height: 1.15;
+  }
+
+  h2 {
+    font-size: 1.8em;
+    line-height: 1.2;
+  }
+
+  h3 {
+    font-size: 1.45em;
+  }
+
+  .hero .ml11 {
+    font-size: 1.9em;
+    padding: 0 10px;
+  }
+
+  .hero .content {
+    padding: 0 10px;
+  }
+
+  .nav-container .nav {
+    padding-top: 110px;
+  }
+
+  .nav-container li a {
+    font-size: 1.45em;
+  }
+
+  .breadcrumbs {
+    word-break: break-word;
+  }
+
+  [class*="col-md-offset-"] {
+    margin-left: 0;
+  }
+
+  .grid {
+    margin: 0 -10px;
+  }
+
+  .grid .grid-item {
+    width: calc(100% - 20px);
+    margin: 10px;
+  }
+
+  .grid .grid-item .thumb:before {
+    padding-top: 78%;
+  }
+
+  .home-intro-copy,
+  .about-copy,
+  .project-copy {
+    text-align: left;
+  }
+
+  .home-intro-copy p,
+  .about-copy p,
+  .project-copy p {
+    max-width: none;
+  }
+
+  .about-work .grid .grid-item,
+  .grid .grid-item.tall {
+    width: calc(100% - 20px);
+  }
+
+  .project-meta .row {
+    margin-bottom: 8px;
+  }
+
+  .project-meta h4 {
+    margin-top: 10px;
+    margin-bottom: 14px;
+  }
+
+  .project-gallery .container {
+    margin-bottom: 0;
+  }
+
+  a.lightbox[style*="height: 520px"] {
+    height: 280px !important;
+    margin: 20px 0 !important;
+  }
+
+  .content img[style*="height: 100%"] {
+    object-fit: contain;
+  }
+
+  footer .col-md-2,
+  footer .col-md-8 {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+}
