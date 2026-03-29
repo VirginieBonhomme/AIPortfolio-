@@ -187,7 +187,16 @@
 })(jQuery);
 // Wrap every letter in a span
 var textWrapper = document.querySelector('.ml11 .letters');
-textWrapper.innerHTML = textWrapper.textContent.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>");
+var textLines = textWrapper.textContent
+  .split('\n')
+  .map(function(line) { return line.trim(); })
+  .filter(function(line) { return line.length > 0; });
+
+textWrapper.innerHTML = textLines.map(function(line) {
+  return "<span class='hero-title-line'>" +
+    line.replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>") +
+    "</span>";
+}).join("<br>");
 
 anime.timeline({ loop: true })
   .add({
@@ -219,4 +228,3 @@ anime.timeline({ loop: true })
     easing: "easeOutExpo",
     delay: 1500
   });
-

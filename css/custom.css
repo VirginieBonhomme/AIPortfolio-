@@ -18,6 +18,14 @@ img {
   line-height: 1.2;
 }
 
+.home-hero-title .hero-title-line {
+  display: inline-block;
+}
+
+.home-hero-title .hero-title-line:first-child {
+  white-space: nowrap;
+}
+
 #wrapper > section#skills,
 #wrapper > section.top-line {
   padding-top: 70px;
