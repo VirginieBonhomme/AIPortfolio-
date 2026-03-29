@@ -10,20 +10,29 @@ img {
 }
 
 .home-hero-title {
-  font-size: 0.88em;
-  max-width: 96%;
+  font-size: clamp(0.72rem, 2vw, 1.2rem);
+  max-width: none;
   margin-left: auto;
   margin-right: auto;
   white-space: normal;
-  line-height: 1.2;
+  line-height: 1.25;
 }
 
 .home-hero-title .hero-title-line {
-  display: inline-block;
+  display: block;
 }
 
-.home-hero-title .hero-title-line:first-child {
+.home-hero-title .hero-title-line:first-child,
+.home-hero-title .hero-title-line:last-child {
   white-space: nowrap;
+}
+
+.about-copy p {
+  margin-bottom: 14px;
+}
+
+.about-copy p:last-child {
+  margin-bottom: 0;
 }
 
 #wrapper > section#skills,
@@ -139,6 +148,11 @@ footer .social {
 footer .social li {
   display: inline-block;
   margin-right: 14px;
+}
+
+footer .col-md-2 p {
+  white-space: nowrap;
+  font-size: 0.82em;
 }
 
 iframe,
