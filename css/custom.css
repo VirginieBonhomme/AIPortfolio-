@@ -18,6 +18,17 @@ img {
   line-height: 1.2;
 }
 
+#wrapper > section#skills,
+#wrapper > section.top-line {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+#wrapper > section#skills .container:last-child,
+#wrapper > section.top-line .container:last-child {
+  margin-bottom: 0;
+}
+
 .skills-profile-pic {
   display: block;
   width: 100%;
