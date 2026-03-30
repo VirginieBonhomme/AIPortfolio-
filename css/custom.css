@@ -387,6 +387,12 @@ video {
     opacity: 1;
   }
 
+  .portfolio-filter-section .grid .grid-item .thumb {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   .grid .grid-item .caption .type,
   .grid .grid-item .caption .description,
   .grid .grid-item .caption .inner {
@@ -525,6 +531,12 @@ video {
 
   .grid .grid-item .thumb:before {
     padding-top: 78%;
+  }
+
+  .portfolio-filter-section .grid .grid-item .thumb {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
 
   .portfolio-filter-section.is-visible-last {
