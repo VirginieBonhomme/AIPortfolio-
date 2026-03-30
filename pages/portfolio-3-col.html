@@ -22,7 +22,7 @@
         <li><a href="../pages/contact.html">Contact</a></li>
          <!--<li><a href="../pages/blog-images.html">Blog</a></li>
         </li>-->
-       <!--<li><a href="../pages/shop.html">Shop</a></li>--> 
+       <!--<li><a href="../pages/portfolio-3-col.html">Shop</a></li>--> 
         </li>
       </ul>
       <div class="copyright">2026 &copy; All rights reserved.</div>
@@ -47,11 +47,16 @@
               <ul class="breadcrumbs">
                 <li> Portfolio</li>
               </ul>
+              <div class="portfolio-filter-controls">
+                <button type="button" class="btn btn-default portfolio-filter-btn is-active" data-filter="all">All Projects</button>
+                <button type="button" class="btn btn-hollow portfolio-filter-btn" data-filter="tech">Technical</button>
+                <button type="button" class="btn btn-hollow portfolio-filter-btn" data-filter="art">Artistic</button>
+              </div>
             </div>
           </div>
         </div>
       </section>
-    <section class="portfolio-group-section" style="padding-top: 0;">
+    <section class="portfolio-group-section portfolio-filter-section" data-category="tech" style="padding-top: 0;">
         <div class="container content">
           <div class="intro">
             <h2>Technical  Projects</h2>
@@ -60,55 +65,74 @@
         <div class="container">
           <div class="grid">
             <div class="grid-sizer"></div>
-            <!-- Portfolio item--><a href="../pages/portfolio-aiArt.html" class="grid-item">
-              <div style="background-image: url(../images/portraits/coffeebag.png); background-size: contain; background-position: center; background-repeat: no-repeat;" class="thumb"></div>
+            <!-- Portfolio item--><a href="../pages/portfolio-aiArt.html" class="grid-item" data-category="tech">
+              <div style="background-image: url(../images/portraits/coffeebag.png)" class="thumb"></div>
               <div class="caption">
                 <div class="type">Brand Design</div>
                 <div class="description">
+                  <div class="project-card-tag">Technical</div>
                   <h4>Kafe Grann</h4>
                   <p>A coffee brand concept rooted in Haitian identity, packaging, and visual storytelling.</p>
                 </div>
               </div></a>
-            <!-- Portfolio item--><a href="../pages/portfolio-melodyapp.html" class="grid-item ">
-              <div style="background-image: url(../images/portraits/melodycover_Page_05.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;" class="thumb"></div>
+            <!-- Portfolio item--><a href="../pages/portfolio-melodyapp.html" class="grid-item " data-category="tech">
+              <div style="background-image: url(../images/portraits/melodycover_Page_05.jpg)" class="thumb"></div>
               <div class="caption">
                 <div class="type">App Design</div>
                 <div class="description">
+                  <div class="project-card-tag">Technical</div>
                   <h4>MelodySketch</h4>
                   <p>A mobile concept for capturing musical ideas quickly through sketch-based interaction.</p>
                 </div>
               </div></a>
-            <!-- Portfolio item--><a href="../pages/portfolio-Duende3D.html" class="grid-item tall">
+            <!-- Portfolio item--><a href="../pages/portfolio-Duende3D.html" class="grid-item tall" data-category="tech">
               <div style="background-image: url(../images/thumbs/DuendeMockup.png)" class="thumb"></div>
               <div class="caption">
                 <div class="type">Design</div>
                 <div class="description">
+                  <div class="project-card-tag">Technical</div>
+                  <div class="project-card-tag">Artistic</div>
                   <h4>Duende 3D Artbook</h4>
                   <p>A 3D visual book exploring surreal worlds, atmosphere, and digital storytelling.</p>
                 </div>
               </div></a>
-            <!-- Portfolio item--><a href="../pages/portfolio-chordmachine.html" class="grid-item">
+            <!-- Portfolio item--><a href="../pages/portfolio-chordmachine.html" class="grid-item" data-category="tech">
               <div style="background-image: url(../images/portraits/chordcover.png)" class="thumb"></div>
               <div class="caption">
                 <div class="type">Music Tool</div>
                 <div class="description">
+                  <div class="project-card-tag">Technical</div>
                   <h4>Chord Machine CM-01</h4>
                   <p>An interactive music project focused on chord exploration, composition, and sound play.</p>
                 </div>
               </div></a>
-            <!-- Portfolio item--><a href="../pages/portfolio-kitchensopplatform.html" class="grid-item">
-              <div style="background-image: url(../images/portraits/kitchencover.png); background-size: contain; background-position: center; background-repeat: no-repeat;" class="thumb"></div>
+            <!-- Portfolio item--><a href="../pages/portfolio-kitchensopplatform.html" class="grid-item" data-category="tech">
+              <div style="background-image: url(../images/portraits/kitchencover.png)" class="thumb"></div>
               <div class="caption">
                 <div class="type">Web App</div>
                 <div class="description">
+                  <div class="project-card-tag">Technical</div>
                   <h4>Kitchen SOP Platform</h4>
                   <p>A multilingual training and operations platform built to streamline restaurant workflows.</p>
                 </div>
               </div></a>
+            <!-- Portfolio item--><a href="../pages/portfolio-PeopleofTheFuture.html" class="grid-item filter-duplicate-item" data-category="tech" style="display:none;">
+              <div style="background-image: url(../images/portraits/potfgallery1.jpg)" class="thumb"></div>
+              <div class="caption">
+                <div class="type">Gallery Show</div>
+                <div class="description">
+                  <div class="project-card-tag">Technical</div>
+                  <div class="project-card-tag">Artistic</div>
+                  <h4>People of the Future</h4>
+                  <p>An AI-driven exhibition imagining Haiti through futurism, memory, and cultural possibility.</p>
+                </div>
+              </div></a>
+            <div class="grid-item portfolio-empty-card tech-filter-only-item" aria-hidden="true" style="display:none;"></div>
+            <div class="grid-item portfolio-empty-card tech-filter-only-item" aria-hidden="true" style="display:none;"></div>
           </div>
         </div>
       </section>
-      <section class="top-line portfolio-group-section portfolio-group-last">
+      <section class="top-line portfolio-group-section portfolio-group-last portfolio-filter-section" data-category="art">
         <div class="container content">
           <div class="intro">
             <h2>Artistic Projects</h2>
@@ -117,11 +141,13 @@
         <div class="container">
           <div class="grid">
             <div class="grid-sizer"></div>
-            <!-- Portfolio item--><a href="../pages/portfolio-PeopleofTheFuture.html" class="grid-item">
+            <!-- Portfolio item--><a href="../pages/portfolio-PeopleofTheFuture.html" class="grid-item" data-category="art">
               <div style="background-image: url(../images/portraits/potfgallery1.jpg)" class="thumb"></div>
               <div class="caption">
                 <div class="type">Gallery Show</div>
                 <div class="description">
+                  <div class="project-card-tag">Technical</div>
+                  <div class="project-card-tag">Artistic</div>
                   <h4>People of the Future</h4>
                   <p>An AI-driven exhibition imagining Haiti through futurism, memory, and cultural possibility.</p>
                 </div>
@@ -134,22 +160,35 @@
                   <h4>Concept</h4>
                 </div>
               </div></a>-->
-            <!-- Portfolio item--><a href="../pages/portfolio-paintings.html" class="grid-item">
-              <div style="background-image: url(../images/portraits/HaitiHome1.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;" class="thumb"></div>
+            <!-- Portfolio item--><a href="../pages/portfolio-paintings.html" class="grid-item" data-category="art">
+              <div style="background-image: url(../images/portraits/HaitiHome1.jpg)" class="thumb"></div>
               <div class="caption">
                 <div class="type">Paintings</div>
                 <div class="description">
+                  <div class="project-card-tag">Artistic</div>
                   <h4>Lakay Series</h4>
                   <p>A painting series centered on home, memory, and Haitian cultural landscapes.</p>
                 </div>
               </div></a>
-            <!-- Portfolio item--><a href="../pages/portfolio-SylvioaCubanexperience.html" class="grid-item">
-              <div style="background-image: url(../images/thumbs/SylvioaCubanexperience1.jpg); background-size: contain; background-position: center; background-repeat: no-repeat;" class="thumb"></div>
+            <!-- Portfolio item--><a href="../pages/portfolio-SylvioaCubanexperience.html" class="grid-item" data-category="art">
+              <div style="background-image: url(../images/thumbs/SylvioaCubanexperience1.jpg)" class="thumb"></div>
               <div class="caption">
                 <div class="type">Photography</div>
                 <div class="description">
+                  <div class="project-card-tag">Artistic</div>
                   <h4>A Cuban Experience</h4>
                   <p>A photographic series documenting mood, place, and lived moments through travel imagery.</p>
+                </div>
+              </div></a>
+            <!-- Portfolio item--><a href="../pages/portfolio-Duende3D.html" class="grid-item tall filter-duplicate-item" data-category="art">
+              <div style="background-image: url(../images/thumbs/DuendeMockup.png)" class="thumb"></div>
+              <div class="caption">
+                <div class="type">Design</div>
+                <div class="description">
+                  <div class="project-card-tag">Technical</div>
+                  <div class="project-card-tag">Artistic</div>
+                  <h4>Duende 3D Artbook</h4>
+                  <p>A 3D visual book exploring surreal worlds, atmosphere, and digital storytelling.</p>
                 </div>
               </div></a>
           </div>
@@ -157,7 +196,7 @@
       </section>
       <!-- Footer-->
       
-      <footer>
+      <footer class="portfolio-page-footer">
         <div class="container content">
           <div class="row">
             <!-- Contact info-->
@@ -188,5 +227,77 @@
     <script src="../modules/tera-lightbox/tera-lightbox.js"></script>
     <script src="../js/assets/animsition.js"></script>
     <script src="../js/functions.js"></script>
+    <script>
+      (function () {
+        var buttons = document.querySelectorAll('.portfolio-filter-btn');
+        var sections = document.querySelectorAll('.portfolio-filter-section');
+
+        function relayoutPortfolioGrids() {
+          if (!window.jQuery) {
+            return;
+          }
+
+          window.requestAnimationFrame(function () {
+            jQuery('.grid').masonry('layout');
+          });
+        }
+
+        function updateLastVisibleSection() {
+          var visibleSections = Array.prototype.filter.call(sections, function (section) {
+            return section.style.display !== 'none';
+          });
+
+          sections.forEach(function (section) {
+            section.classList.remove('is-visible-last');
+          });
+
+          if (visibleSections.length) {
+            visibleSections[visibleSections.length - 1].classList.add('is-visible-last');
+          }
+        }
+
+        buttons.forEach(function (button) {
+          button.addEventListener('click', function () {
+            var filter = button.getAttribute('data-filter');
+
+            buttons.forEach(function (item) {
+              item.classList.remove('is-active');
+              item.classList.remove('btn-default');
+              item.classList.add('btn-hollow');
+            });
+
+            button.classList.add('is-active');
+            button.classList.remove('btn-hollow');
+            button.classList.add('btn-default');
+
+            sections.forEach(function (section) {
+              var category = section.getAttribute('data-category');
+              var shouldShow = filter === 'all' || filter === category;
+              section.style.display = shouldShow ? '' : 'none';
+            });
+
+            document.querySelectorAll('.filter-duplicate-item').forEach(function (item) {
+              item.style.display = filter === 'all' ? 'none' : '';
+            });
+
+            document.querySelectorAll('.tech-filter-only-item').forEach(function (item) {
+              item.style.display = filter === 'tech' ? '' : 'none';
+            });
+
+            updateLastVisibleSection();
+            relayoutPortfolioGrids();
+          });
+        });
+
+        document.querySelectorAll('.filter-duplicate-item').forEach(function (item) {
+          item.style.display = 'none';
+        });
+        document.querySelectorAll('.tech-filter-only-item').forEach(function (item) {
+          item.style.display = 'none';
+        });
+        updateLastVisibleSection();
+        relayoutPortfolioGrids();
+      })();
+    </script>
   </body>
 </html>

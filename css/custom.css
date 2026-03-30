@@ -9,9 +9,13 @@ img {
   height: auto;
 }
 
+.intro {
+  margin-top: 0;
+}
+
 .home-hero-title {
   font-size: clamp(0.72rem, 2vw, 1.2rem);
-  max-width: none;
+  max-width: min(92vw, 980px);
   margin-left: auto;
   margin-right: auto;
   white-space: normal;
@@ -86,8 +90,30 @@ img {
   padding-right: 30px;
 }
 
+.featured-project-copy .intro {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.featured-project-copy h4 {
+  margin-top: 0;
+}
+
 .featured-project-copy .btn {
   margin-top: 10px;
+}
+
+.featured-project-mobile-title {
+  display: none;
+}
+
+.featured-project-mobile-title .intro {
+  margin-bottom: 0;
+}
+
+.featured-project-mobile-title h2 {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .featured-project-image-frame {
@@ -100,6 +126,30 @@ img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.portfolio-filter-controls {
+  margin-top: 18px;
+}
+
+.portfolio-filter-controls .btn {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.project-card-tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.portfolio-empty-card {
+  visibility: hidden;
+  pointer-events: none;
 }
 
 .home-featured-last {
@@ -126,12 +176,26 @@ img {
 }
 
 .portfolio-group-last {
-  padding-bottom: 90px;
+  padding-bottom: 0;
 }
 
 .portfolio-group-last + footer {
   margin-top: 0;
-  padding-top: 70px;
+  padding-top: 30px;
+}
+
+.portfolio-filter-section.is-visible-last {
+  padding-bottom: 110px;
+}
+
+.portfolio-filter-section.is-visible-last ~ footer {
+  margin-top: 0;
+  padding-top: 50px;
+}
+
+.portfolio-page-footer {
+  margin-top: 0;
+  padding: 40px 0 60px;
 }
 
 .about-page-section {
@@ -191,6 +255,17 @@ video {
   max-width: 100%;
 }
 
+@media screen and (max-width: 1200px) {
+  .skills-profile-frame {
+    width: min(100%, 360px);
+    height: min(calc(100vw - 60px), 360px);
+  }
+
+  .featured-project-image-frame {
+    max-width: 560px;
+  }
+}
+
 @media screen and (max-width: 992px) {
   .nav-container {
     width: 100%;
@@ -222,6 +297,12 @@ video {
 
   .home-hero-title {
     white-space: normal;
+    max-width: min(92vw, 760px);
+  }
+
+  .home-hero-title .hero-title-line:first-child,
+  .home-hero-title .hero-title-line:last-child {
+    white-space: normal;
   }
 
   .slider.fs .hero,
@@ -229,6 +310,71 @@ video {
   .hero.fs {
     min-height: 70vh;
     height: auto;
+  }
+
+  #wrapper > section#skills,
+  #wrapper > section.top-line {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  .skills-layout,
+  .featured-project-layout {
+    display: flex;
+    flex-direction: column;
+    row-gap: 28px;
+  }
+
+  .skills-layout > [class*="col-md-"],
+  .featured-project-layout > [class*="col-md-"] {
+    width: 100%;
+  }
+
+  .skills-bio-column,
+  .featured-project-copy {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .featured-project-mobile-title {
+    display: block;
+    order: 1;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 12px;
+  }
+
+  .featured-project-media {
+    order: 2;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .featured-project-copy {
+    order: 3;
+    margin-bottom: 0;
+  }
+
+  .featured-project-copy .intro {
+    display: none;
+  }
+
+  .featured-project-copy .btn {
+    margin-top: 18px;
+  }
+
+  .skills-profile-frame {
+    width: min(100%, 320px);
+    height: min(calc(100vw - 80px), 320px);
+  }
+
+  .featured-project-image-frame {
+    max-width: 100%;
+  }
+
+  .contact-form-panel {
+    padding: 36px 32px;
   }
 
   .grid .grid-item {
@@ -276,7 +422,8 @@ video {
   }
 
   .featured-project-layout {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   .contact-form-panel {
@@ -285,6 +432,11 @@ video {
 
   .contact-page-section {
     padding-bottom: 48px;
+  }
+
+  .portfolio-filter-controls .btn {
+    width: 100%;
+    margin-right: 0;
   }
 
   .skills-bio-column {
@@ -296,7 +448,7 @@ video {
   .featured-project-copy {
     padding-right: 15px;
     padding-left: 15px;
-    margin-bottom: 24px;
+    margin-bottom: 0;
   }
 
   body {
@@ -337,6 +489,11 @@ video {
     padding: 0 10px;
   }
 
+  .home-hero-title {
+    font-size: clamp(0.9rem, 3.8vw, 1.15rem);
+    max-width: 100%;
+  }
+
   .hero .content {
     padding: 0 10px;
   }
@@ -368,6 +525,10 @@ video {
 
   .grid .grid-item .thumb:before {
     padding-top: 78%;
+  }
+
+  .portfolio-filter-section.is-visible-last {
+    padding-bottom: 72px;
   }
 
   .home-intro-copy,
@@ -413,5 +574,35 @@ video {
   footer .col-md-8 {
     text-align: left;
     margin-bottom: 15px;
+  }
+
+  footer .col-md-2 p {
+    white-space: normal;
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home-hero-title {
+    font-size: clamp(0.88rem, 4.2vw, 1rem);
+    line-height: 1.35;
+  }
+
+  .skills-profile-frame {
+    width: min(100%, 280px);
+    height: min(calc(100vw - 48px), 280px);
+  }
+
+  .contact-form-panel {
+    padding: 24px 18px;
+  }
+
+  #wrapper > section#skills,
+  #wrapper > section.top-line,
+  .portfolio-group-section,
+  .about-page-section,
+  .contact-page-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
