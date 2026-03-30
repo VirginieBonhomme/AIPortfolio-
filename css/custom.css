@@ -41,6 +41,10 @@ img {
   padding-bottom: 70px;
 }
 
+#skills {
+  background: #f0f0f0;
+}
+
 #wrapper > section#skills .container:last-child,
 #wrapper > section.top-line .container:last-child {
   margin-bottom: 0;
@@ -110,6 +114,33 @@ img {
 .contact-form-panel {
   padding: 48px;
   background: #f5f5f5;
+}
+
+.portfolio-group-section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.portfolio-group-section .container.content {
+  margin-bottom: 20px;
+}
+
+.portfolio-group-last {
+  padding-bottom: 90px;
+}
+
+.portfolio-group-last + footer {
+  margin-top: 0;
+  padding-top: 70px;
+}
+
+.about-page-section {
+  padding-bottom: 90px;
+}
+
+.about-page-section + footer {
+  margin-top: 0;
+  padding-top: 70px;
 }
 
 .contact-page-section {
