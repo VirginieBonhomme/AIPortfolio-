@@ -147,6 +147,17 @@ img {
   text-transform: uppercase;
 }
 
+.sitwayen-card .caption .type {
+  white-space: nowrap;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+}
+
+.sitwayen-card .caption .description {
+  top: 78px;
+  bottom: auto;
+}
+
 .portfolio-empty-card {
   visibility: hidden;
   pointer-events: none;
@@ -403,6 +414,11 @@ video {
     bottom: auto;
     opacity: 1;
     transform: none;
+  }
+
+  .grid .grid-item .caption .type {
+    display: block;
+    margin-bottom: 12px;
   }
 
   .grid .grid-item .caption .description,
